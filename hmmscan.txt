@@ -1,0 +1,45 @@
+#!/bin/bash
+
+#PBS -l nodes=1:ppn=8
+#PBS -l vmem=64gb
+#PBS -l walltime=10:00:00
+#PBS -M lawler.chloe@gmail.com
+#PBS -m ae
+#PBS -j oe
+
+cd $katana/srv/scratch/z5255670/cazy
+module add hmmer/3.1b2
+
+hmmscan --cpu 8 --domtblout bin.121.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.121.faa > bin.121_dbcan.out
+hmmscan --cpu 8 --domtblout bin.202.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.202.faa > bin.202_dbcan.out
+hmmscan --cpu 8 --domtblout bin.657.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.657.faa > bin.657_dbcan.out
+hmmscan --cpu 8 --domtblout bin.681.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.681.faa > bin.681_dbcan.out
+hmmscan --cpu 8 --domtblout bin.688.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.688.faa > bin.688_dbcan.out
+hmmscan --cpu 8 --domtblout bin.741.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.741.faa > bin.741_dbcan.out
+hmmscan --cpu 8 --domtblout bin.806.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.806.faa > bin.806_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1013.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1013.faa > bin.1013_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1076.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1076.faa > bin.1076_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1214.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1214.faa > bin.1214_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1249.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1249.faa > bin.1249_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1431.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1431.faa > bin.1373_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1433.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1433.faa > bin.1433_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1455.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1455.faa > bin.1455_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1512_sub.proteins.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1512_sub.proteins.faa > bin.1512_sub.proteins_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1586.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1586.faa > bin.1586_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1737.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1737.faa > bin.1737_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1841.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1841.faa > bin.1841_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1863.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1863.faa > bin.1863_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1870_sub.proteins.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1870_sub.proteins.faa > bin.1870_sub.proteins_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1884.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1884.faa > bin.1884_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1947.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1947.faa > bin.1947_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1955.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1955.faa > bin.1955_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1974.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1974.faa > bin.1974_dbcan.out
+hmmscan --cpu 8 --domtblout bin.1998.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.1998.faa > bin.1998_dbcan.out
+hmmscan --cpu 8 --domtblout bin.2076.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.2076.faa > bin.2076_dbcan.out
+hmmscan --cpu 8 --domtblout bin.2135.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.2135.faa > bin.2135._dbcan.out
+hmmscan --cpu 8 --domtblout bin.2155.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.2155.faa > bin.2155_dbcan.out
+hmmscan --cpu 8 --domtblout bin.2184.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.2184.faa > bin.2184_dbcan.out
+hmmscan --cpu 8 --domtblout bin.2187_sub.proteins.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.2187_sub.proteins.faa > bin.2187_sub.proteins_dbcan.out
+hmmscan --cpu 8 --domtblout bin.2204.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.2204.faa > bin.2204_dbcan.out
+hmmscan --cpu 8 --domtblout bin.2235.faa_dbcan.dm dbCAN-HMMdb-V10.txt bin.2235.faa > bin.2235_dbcan.out
+

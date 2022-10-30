@@ -1,0 +1,11 @@
+IQ-TREE multicore version 1.6.10 for Linux 64-bit built May 14 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    k020 (AVX512, FMA3, 1511 GB RAM)
+Command: iqtree-omp -st AA -bb 10000 -s concatenatedmarkers_endtrimmed_bgme.faa -m MFP -nt 4
+Seed:    993012 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Oct 22 17:23:04 2022
+Kernel:  AVX+FMA - 4 threads (80 CPU cores detected)
+
+Reading alignment file concatenatedmarkers_endtrimmed_bgme.faa ... ERROR: File not found concatenatedmarkers_endtrimmed_bgme.faa
